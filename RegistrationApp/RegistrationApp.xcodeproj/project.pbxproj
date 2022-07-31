@@ -14,6 +14,8 @@
 		575F43512893FCC400028374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575F434F2893FCC400028374 /* Main.storyboard */; };
 		575F43532893FCC700028374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 575F43522893FCC700028374 /* Assets.xcassets */; };
 		575F43562893FCC700028374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 575F43542893FCC700028374 /* LaunchScreen.storyboard */; };
+		5761C0EB2896B5C0002E65EA /* RegistrastionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761C0EA2896B5C0002E65EA /* RegistrastionViewController.swift */; };
+		5761C0ED2896BA02002E65EA /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761C0EC2896BA02002E65EA /* InputViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		575F43522893FCC700028374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		575F43552893FCC700028374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		575F43572893FCC700028374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5761C0EA2896B5C0002E65EA /* RegistrastionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrastionViewController.swift; sourceTree = "<group>"; };
+		5761C0EC2896BA02002E65EA /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				575F43522893FCC700028374 /* Assets.xcassets */,
 				575F43542893FCC700028374 /* LaunchScreen.storyboard */,
 				575F43572893FCC700028374 /* Info.plist */,
+				5761C0EA2896B5C0002E65EA /* RegistrastionViewController.swift */,
+				5761C0EC2896BA02002E65EA /* InputViewController.swift */,
 			);
 			path = RegistrationApp;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				575F434E2893FCC400028374 /* ViewController.swift in Sources */,
+				5761C0ED2896BA02002E65EA /* InputViewController.swift in Sources */,
 				575F434A2893FCC400028374 /* AppDelegate.swift in Sources */,
 				575F434C2893FCC400028374 /* SceneDelegate.swift in Sources */,
+				5761C0EB2896B5C0002E65EA /* RegistrastionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
