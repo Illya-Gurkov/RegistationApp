@@ -8,16 +8,18 @@
 import UIKit
 
 class RegistrastionViewController: UIViewController {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+     
     }
     
     @IBAction func goToSignIn(_ sender: UIButton) {
         navigationController?.popToRootViewController(animated: true)
+       
     }
-    
-  
 }
+
+
+

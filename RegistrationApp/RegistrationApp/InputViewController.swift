@@ -11,12 +11,12 @@ class InputViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
      
     }
     
     @IBAction func goToRegistrastion(_ sender: UIButton) {
       performSegue(withIdentifier: "goVC", sender: nil)
+       
     }
     
   
