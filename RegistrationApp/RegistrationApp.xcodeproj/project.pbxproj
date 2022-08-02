@@ -17,6 +17,8 @@
 		5761C0ED2896BA02002E65EA /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5761C0EC2896BA02002E65EA /* InputViewController.swift */; };
 		5763AB0328996A60003E9704 /* SignUpStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5763AB0228996A60003E9704 /* SignUpStoryboard.storyboard */; };
 		5763AB0528998967003E9704 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5763AB0428998967003E9704 /* SignUpVC.swift */; };
+		5763AB08289998CC003E9704 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5763AB07289998CC003E9704 /* Service.swift */; };
+		5763AB0B28999EAB003E9704 /* UiViewControllerExt-s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5763AB0A28999EAB003E9704 /* UiViewControllerExt-s.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		5761C0EC2896BA02002E65EA /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
 		5763AB0228996A60003E9704 /* SignUpStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpStoryboard.storyboard; sourceTree = "<group>"; };
 		5763AB0428998967003E9704 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		5763AB07289998CC003E9704 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		5763AB0A28999EAB003E9704 /* UiViewControllerExt-s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewControllerExt-s.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 		575F43482893FCC400028374 /* RegistrationApp */ = {
 			isa = PBXGroup;
 			children = (
+				5763AB0928999E0C003E9704 /* Extensions */,
+				5763AB0628999869003E9704 /* Services */,
 				575F43492893FCC400028374 /* AppDelegate.swift */,
 				575F434B2893FCC400028374 /* SceneDelegate.swift */,
 				575F434D2893FCC400028374 /* ViewController.swift */,
@@ -77,6 +83,22 @@
 				5763AB0428998967003E9704 /* SignUpVC.swift */,
 			);
 			path = RegistrationApp;
+			sourceTree = "<group>";
+		};
+		5763AB0628999869003E9704 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5763AB07289998CC003E9704 /* Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5763AB0928999E0C003E9704 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5763AB0A28999EAB003E9704 /* UiViewControllerExt-s.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,9 +176,11 @@
 			files = (
 				575F434E2893FCC400028374 /* ViewController.swift in Sources */,
 				5761C0ED2896BA02002E65EA /* InputViewController.swift in Sources */,
+				5763AB0B28999EAB003E9704 /* UiViewControllerExt-s.swift in Sources */,
 				575F434A2893FCC400028374 /* AppDelegate.swift in Sources */,
 				5763AB0528998967003E9704 /* SignUpVC.swift in Sources */,
 				575F434C2893FCC400028374 /* SceneDelegate.swift in Sources */,
+				5763AB08289998CC003E9704 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
