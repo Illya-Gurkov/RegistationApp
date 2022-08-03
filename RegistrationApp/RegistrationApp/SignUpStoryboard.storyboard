@@ -240,11 +240,28 @@
                         <outletCollection property="indicatorsViews" destination="VgI-de-Eg0" collectionClass="NSMutableArray" id="jDE-dx-nc4"/>
                         <outletCollection property="indicatorsViews" destination="71s-MU-0wO" collectionClass="NSMutableArray" id="3sy-BT-JKZ"/>
                         <outletCollection property="indicatorsViews" destination="Mvr-Im-ueM" collectionClass="NSMutableArray" id="eco-dC-bJh"/>
+                        <segue destination="NOt-jg-clc" kind="show" identifier="goToCodeVerificationVC" id="QX1-CR-vfW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swo-Df-loU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2323.1884057971015" y="34.821428571428569"/>
+        </scene>
+        <!--Code VerificationVC-->
+        <scene sceneID="7qg-rw-q79">
+            <objects>
+                <viewController storyboardIdentifier="CodeVerificationVC" id="NOt-jg-clc" customClass="CodeVerificationVC" customModule="RegistrationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="drM-FV-kwZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="FIg-Nm-HyY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="apk-w5-HED"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxB-NG-gtQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3148" y="35"/>
         </scene>
     </scenes>
     <resources>

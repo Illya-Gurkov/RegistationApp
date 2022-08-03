@@ -79,6 +79,11 @@ final class SignUpVC: UIViewController {
     
     
     @IBAction func SignUpActionBtn() {
+        if let email = emailTF.text,
+           let pass = passwordTF.text{
+            let userModel = UserModal(name: nameTF.text, email: email, pass: pass)
+            performSegue(withIdentifier: "goToCodeVerificationVC", sender: userModel)
+        }
     }
     // MARK: - Fun-s
     
@@ -88,6 +93,7 @@ final class SignUpVC: UIViewController {
                 view.alpha = 1
             }  else {
                 view.alpha = 0.1
+                
             }
         }
     }
@@ -97,15 +103,14 @@ final class SignUpVC: UIViewController {
     }
     
     
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if let codeVeriVC = segue.destination as? CodeVerificationVC,
+           let userModel = sender as? UserModal {
+            codeVeriVC.userModel = userModel
+        }
     }
-    */
-
 }
-
