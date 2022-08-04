@@ -16,7 +16,7 @@ class InputViewController: UIViewController {
     }
     
     @IBAction func goToRegistrastion(_ sender: UIButton) {
-      performSegue(withIdentifier: "goVC", sender: nil)
+   
     }
     
   
