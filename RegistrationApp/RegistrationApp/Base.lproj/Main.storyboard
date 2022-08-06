@@ -8,17 +8,41 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--PrpFile-->
         <scene sceneID="GpQ-6Y-MEa">
             <objects>
-                <viewController id="z9j-dS-1Dj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProFileVC" id="z9j-dS-1Dj" customClass="ProFileVC" customModule="RegistrationApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vb5-uB-1y3">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ji4-m1-J2I">
+                                <rect key="frame" x="294" y="97" width="72" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="LogOut"/>
+                                <connections>
+                                    <action selector="LogOutAction:" destination="z9j-dS-1Dj" eventType="touchUpInside" id="Jp1-Cl-qVK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B5G-18-n5L">
+                                <rect key="frame" x="152.66666666666666" y="727" width="122.99999999999997" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete Account"/>
+                                <connections>
+                                    <action selector="deleteAcountAction" destination="z9j-dS-1Dj" eventType="touchUpInside" id="ahA-1u-Qkf"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7Ow-Xc-nTw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7Ow-Xc-nTw" firstAttribute="bottom" secondItem="B5G-18-n5L" secondAttribute="bottom" constant="85" id="TXh-r1-pHc"/>
+                            <constraint firstItem="ji4-m1-J2I" firstAttribute="top" secondItem="7Ow-Xc-nTw" secondAttribute="top" constant="53" id="gV6-PT-gTJ"/>
+                            <constraint firstItem="B5G-18-n5L" firstAttribute="centerX" secondItem="7Ow-Xc-nTw" secondAttribute="centerX" id="iJB-iH-D6j"/>
+                            <constraint firstItem="7Ow-Xc-nTw" firstAttribute="trailing" secondItem="ji4-m1-J2I" secondAttribute="trailing" constant="62" id="qgw-gl-JGn"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="KZY-El-8cB"/>
+                    <tabBarItem key="tabBarItem" title="PrpFile" image="person.crop.circle.badge.exclamationmark.fill" catalog="system" id="KZY-El-8cB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UqJ-ZZ-MdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +84,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="person.crop.circle.badge.exclamationmark.fill" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

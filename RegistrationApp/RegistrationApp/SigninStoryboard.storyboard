@@ -81,7 +81,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="rtQ-w2-VCj" kind="show" id="OX4-14-Hm7"/>
+                                    <action selector="signInAction" destination="QPx-Zj-O8N" eventType="touchUpInside" id="Zqi-s8-7fP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,6 +101,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Aa6-kC-LT0"/>
+                    <connections>
+                        <outlet property="emailTF" destination="bSN-oW-ZeJ" id="W1P-3e-umW"/>
+                        <outlet property="errorEmail" destination="749-HL-yxo" id="HOU-50-MaX"/>
+                        <outlet property="errorPass" destination="DSy-Cq-SCd" id="nZX-uB-TQL"/>
+                        <outlet property="passTF" destination="fSh-3T-Q1d" id="djA-8s-zHH"/>
+                        <segue destination="rtQ-w2-VCj" kind="show" identifier="goToMain" id="XR1-ZJ-FtB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzB-nS-Ybm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CodeVerificationVC: UIViewController {
+final class CodeVerificationVC: UIViewController {
     
     
     @IBOutlet weak var infoLbl: UILabel!
