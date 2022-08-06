@@ -21,6 +21,7 @@
 		5763AB0528998967003E9704 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5763AB0428998967003E9704 /* SignUpVC.swift */; };
 		5763AB08289998CC003E9704 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5763AB07289998CC003E9704 /* Service.swift */; };
 		5763AB0B28999EAB003E9704 /* UiViewControllerExt-s.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5763AB0A28999EAB003E9704 /* UiViewControllerExt-s.swift */; };
+		576A1B65289D5BB20047007A /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576A1B64289D5BB20047007A /* WelcomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5763AB0428998967003E9704 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		5763AB07289998CC003E9704 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		5763AB0A28999EAB003E9704 /* UiViewControllerExt-s.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewControllerExt-s.swift"; sourceTree = "<group>"; };
+		576A1B64289D5BB20047007A /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				5761C0EC2896BA02002E65EA /* InputViewController.swift */,
 				5763AB0428998967003E9704 /* SignUpVC.swift */,
 				5744CEB1289AD2890027A67E /* CodeVerificationVC.swift */,
+				576A1B64289D5BB20047007A /* WelcomeVC.swift */,
 			);
 			path = RegistrationApp;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				575F434E2893FCC400028374 /* ViewController.swift in Sources */,
+				576A1B65289D5BB20047007A /* WelcomeVC.swift in Sources */,
 				5761C0ED2896BA02002E65EA /* InputViewController.swift in Sources */,
 				5763AB0B28999EAB003E9704 /* UiViewControllerExt-s.swift in Sources */,
 				5744CEB2289AD2890027A67E /* CodeVerificationVC.swift in Sources */,
