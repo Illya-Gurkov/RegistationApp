@@ -25,6 +25,8 @@ final class SignUpVC: UIViewController {
     
     @IBOutlet private var signUpBtn: UIButton!
     
+    @IBOutlet private var scrollView: UIScrollView!
+    
     // MARK: - Properties
 
     private var isValidEmail = false { didSet { updateSignUp() } }
@@ -34,6 +36,7 @@ final class SignUpVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardWhenTappedAround()
+        startKeyboardObservers()
     }
 
     // MARK: - Func-s
@@ -102,14 +105,29 @@ final class SignUpVC: UIViewController {
         signUpBtn.isEnabled = isValidEmail && isConfPass && passwordStrength != .veryWeak
     }
     
-    
-    ///keyboard Observer-s
+    /// keyboard Observer-s
+   
+    private func startKeyboardObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
 
-    
+    @objc private func keyboardWillShow(notification: Notification) {
+        guard let keyboardSize =
+            (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+        else {
+            return
+        }
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: keyboardSize.height, right: 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+    }
 
-    
-    
-    
+    @objc private func keyboardWillHide() {
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        scrollView.contentInset = contentInsets
+        scrollView.scrollIndicatorInsets = contentInsets
+    }
     
     // MARK: - Navigation
 

@@ -235,6 +235,7 @@
                         <outlet property="errorPassLbl" destination="D84-XQ-n2g" id="4SP-7Z-GwY"/>
                         <outlet property="nameTF" destination="jay-QH-PEs" id="Gj4-zc-oZ2"/>
                         <outlet property="passwordTF" destination="zzv-17-8d4" id="D8z-O4-3a6"/>
+                        <outlet property="scrollView" destination="kAM-vs-f5L" id="7ef-tC-j9M"/>
                         <outlet property="signUpBtn" destination="kBM-sd-5Ab" id="O39-lv-70C"/>
                         <outletCollection property="indicatorsViews" destination="HPu-du-3fy" collectionClass="NSMutableArray" id="lYr-vv-id9"/>
                         <outletCollection property="indicatorsViews" destination="VgI-de-Eg0" collectionClass="NSMutableArray" id="jDE-dx-nc4"/>
