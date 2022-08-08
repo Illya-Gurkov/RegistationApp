@@ -45,6 +45,10 @@
                                         <rect key="frame" x="0.0" y="51" width="378" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="emailTF:" destination="z9j-dS-1Dj" eventType="editingChanged" id="IdQ-KB-cWf"/>
+                                            <action selector="emailTFAct:" destination="z9j-dS-1Dj" eventType="editingChanged" id="GUG-du-4pE"/>
+                                        </connections>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFn-bh-nKi">
                                         <rect key="frame" x="0.0" y="100" width="378" height="36"/>

@@ -8,7 +8,8 @@
 import UIKit
 
 class ProFileVC: UIViewController {
-    var user: UserModal? 
+    var user: UserModal?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -20,15 +21,32 @@ class ProFileVC: UIViewController {
     
     @IBOutlet weak var passLbl: UILabel!
     
+    
+    @IBAction func emailTF(_ sender: UITextField) {
+    }
+    
+    
+    
    // MARK:- Action
     
     @IBAction func LogOutAction(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
-
+    @IBAction func emailTFAct(_ sender: UITextField) {
+    }
+    
     @IBAction func deleteAcountAction() {
         UserDefaultService.cleanUserDefauls()
     }
+    
+  
+    
+    
+    
+    
+    
+    
+    
     private func setupUI() {
         let email = UserDefaults.standard.string(forKey: "email")
         emailLbl.text = email
@@ -38,4 +56,3 @@ class ProFileVC: UIViewController {
         passLbl.text = pass
     }
 }
-
