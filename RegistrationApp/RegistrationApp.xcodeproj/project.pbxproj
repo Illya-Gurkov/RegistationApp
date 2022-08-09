@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5744CEB0289ACD190027A67E /* UserModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744CEAF289ACD190027A67E /* UserModal.swift */; };
 		5744CEB2289AD2890027A67E /* CodeVerificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5744CEB1289AD2890027A67E /* CodeVerificationVC.swift */; };
+		5747FC1828A28BE800084604 /* editingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5747FC1728A28BE800084604 /* editingVC.swift */; };
 		5755D9BC28957DBE006FD461 /* SigninStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5755D9BB28957DBE006FD461 /* SigninStoryboard.storyboard */; };
 		575F434A2893FCC400028374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F43492893FCC400028374 /* AppDelegate.swift */; };
 		575F434C2893FCC400028374 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 575F434B2893FCC400028374 /* SceneDelegate.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		5744CEAF289ACD190027A67E /* UserModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModal.swift; sourceTree = "<group>"; };
 		5744CEB1289AD2890027A67E /* CodeVerificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationVC.swift; sourceTree = "<group>"; };
+		5747FC1728A28BE800084604 /* editingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editingVC.swift; sourceTree = "<group>"; };
 		5755D9BB28957DBE006FD461 /* SigninStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SigninStoryboard.storyboard; sourceTree = "<group>"; };
 		575F43462893FCC400028374 /* RegistrationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RegistrationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		575F43492893FCC400028374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				575F43572893FCC700028374 /* Info.plist */,
 				5761C0EC2896BA02002E65EA /* InputViewController.swift */,
 				5763AB0428998967003E9704 /* SignUpVC.swift */,
+				5747FC1728A28BE800084604 /* editingVC.swift */,
 				5744CEB1289AD2890027A67E /* CodeVerificationVC.swift */,
 				5792F20C289E7A2500AD9804 /* UserDefaultService.swift */,
 				576A1B64289D5BB20047007A /* WelcomeVC.swift */,
@@ -211,6 +214,7 @@
 				5763AB0528998967003E9704 /* SignUpVC.swift in Sources */,
 				575F434C2893FCC400028374 /* SceneDelegate.swift in Sources */,
 				5792F211289E8E2000AD9804 /* ProFileVC.swift in Sources */,
+				5747FC1828A28BE800084604 /* editingVC.swift in Sources */,
 				5744CEB0289ACD190027A67E /* UserModal.swift in Sources */,
 				5763AB08289998CC003E9704 /* Service.swift in Sources */,
 			);

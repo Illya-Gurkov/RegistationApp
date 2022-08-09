@@ -7,9 +7,21 @@
 
 import UIKit
 
-class ProFileVC: UIViewController {
-    var user: UserModal?
+
+
+protocol editingDelegate {
+    func update (meaningOne: String, meaningTwo:String, meaningThree: String)
+}
+
+class ProFileVC: UIViewController, editingDelegate {
+    func update(meaningOne: String, meaningTwo: String, meaningThree: String) {
+        emailLbl.text = meaningOne
+        nameLbl.text = meaningTwo
+        passLbl.text = meaningThree
+    }
     
+    var user: UserModal?
+  
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -22,9 +34,17 @@ class ProFileVC: UIViewController {
     @IBOutlet weak var passLbl: UILabel!
     
     
-    @IBAction func emailTF(_ sender: UITextField) {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? editingVC {
+            vc.email = emailLbl.text!
+            vc.name = nameLbl.text!
+            vc.pass = passLbl.text!
+            vc.delegate = self
+        }
     }
     
+ 
     
     
    // MARK:- Action
@@ -32,8 +52,7 @@ class ProFileVC: UIViewController {
     @IBAction func LogOutAction(_ sender: Any) {
         navigationController?.popToRootViewController(animated: true)
     }
-    @IBAction func emailTFAct(_ sender: UITextField) {
-    }
+    
     
     @IBAction func deleteAcountAction() {
         UserDefaultService.cleanUserDefauls()
@@ -56,3 +75,6 @@ class ProFileVC: UIViewController {
         passLbl.text = pass
     }
 }
+
+
+
