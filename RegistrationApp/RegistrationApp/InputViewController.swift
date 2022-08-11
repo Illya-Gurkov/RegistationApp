@@ -18,6 +18,7 @@ class InputViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         isLoggedUser()
     }
 
@@ -36,6 +37,12 @@ class InputViewController: UIViewController {
         if let _ = UserDefaultService.getUserModel() {
             performSegue(withIdentifier: "goToMain", sender: nil)
         }
+     
+    }
+    
+    @IBAction func goToRegistrastion(_ sender: UIButton) {
+      performSegue(withIdentifier: "goVC", sender: nil)
+       
     }
     
     @IBAction func emailTFAct(_ sender: UITextField) {}
